@@ -28,18 +28,18 @@ def test_happy_wiki():
     driver.switch_to.frame('frame_name')
     """
     """
-    # Task 3
-    one way to do it will be. Assuming we have 10 tabs
-    """
-    for i in range(10):
-        window_after = driver.window_handles[i]
-        driver.switch_to_window(window_after)
-        try:
-            element = WebDriverWait(driver, 3).until(
-            EC.presence_of_element_located((By.XPATH, '//*[@id="mp-tfa-img"]/div/a/img'))) #image xpath
-            print("IAMGE found")
-            break
-        except: pass
+# Task 3
+one way to do it will be. Assuming we have 10 tabs
+"""
+for i in range(10):
+    window_after = driver.window_handles[i]
+    driver.switch_to_window(window_after)
+    try:
+        element = WebDriverWait(driver, 3).until(
+        EC.presence_of_element_located((By.XPATH, '//*[@id="mp-tfa-img"]/div/a/img'))) #image xpath
+        print("IAMGE found")
+        break
+    except: pass
 
 # Task 4
 """
