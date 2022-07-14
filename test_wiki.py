@@ -43,7 +43,7 @@ for i in range(10):
 
 # Task 4
 """
-Yes you can refer to parent class methods from whitin 
+Yes you can refer to parent class methods from whitin the child one <super> command
 """
 
 # Task 5
