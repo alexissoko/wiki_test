@@ -32,7 +32,8 @@ Task 10 -While running script, you have observed "NoSuchElementException". But y
 Deliverable
 Please, provide a GitHub repo/cloud folder with the solutions to the tasks and instructions on how to run the tests.
  
-"""from tracemalloc import start
+"""
+from tracemalloc import start
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
